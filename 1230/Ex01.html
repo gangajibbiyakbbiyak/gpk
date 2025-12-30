@@ -30,6 +30,9 @@
     caption{
         text-align: left;
     }
+    .bg{
+        background-color: rgb(223, 234, 239);
+    }
 </style>
 </head>
 <body>
@@ -42,7 +45,7 @@
     <table>
         <caption><strong>음료 메뉴 및 가격표</strong></caption>
         <colgroup>
-            <col style="width: 150px; background-color: skyblue;">
+            <col style="width: 150px; background-color: rgb(223, 234, 239);">
             <col style="width: 200px;">
             <col style="width: 150px;">
             <col style="width: 150px;">
@@ -65,7 +68,7 @@
                 <td>4,500원</td>
                 <td>-</td>
             </tr>
-            <tr>
+            <tr class="bg">
                 <td>카페라떼</td>
                 <td>Regular</td>
                 <td>5,000원</td>
@@ -84,7 +87,7 @@
                 <td>4,000</td>
                 <td>-</td>
             </tr>
-            <tr>
+            <tr class="bg">
                 <td>캐모마일</td>
                 <td>Regular</td>
                 <td>4,500</td>
@@ -98,10 +101,10 @@
             </tr>
             <tr>
                 <td rowspan="2">스무디</td>
-                <td>딸기 스무디</td>
-                <td>Large</td>
-                <td>6,500</td>
-                <td style="color: red;"><strong>시즌 한정</strong></td>
+                <td class="bg">딸기 스무디</td>
+                <td class="bg">Large</td>
+                <td class="bg">6,500</td>
+                <td class="bg" style="color: red;"><strong>시즌 한정</strong></td>
             </tr>
             <tr>
                 <td>망고 스무디</td>
