@@ -67,19 +67,22 @@ public class Homework {
 // - 나이와 학생 여부를 변수로 저장
 // - 최종 입장료를 출력
 // ############################################################## 9번
-        int age2 = 7;
-        boolean isStudent = true;
-        int fee = 10000;
 
-        if(age2 >= 65){
-            System.out.println("무료입니다.");
-        }else if(isStudent){
-            System.out.println("요금은 " + fee/2 + "원 입니다.");
-        }else if(!isStudent){
-            System.out.println("요금은 10000원 입니다.");
-        }else if(age2 < 7){
-            System.out.println("무료 입니다.");
+
+        int age2 = 45;               // 나이
+        boolean isStudent = false; // 학생 여부
+        int fee = 10000;           // 기본 요금
+
+        if(age2 >= 65) {
+            System.out.println("입장료 무료");
+        } else if(age2 < 7) { // 7세 미만 무료
+            System.out.println("입장료 무료");
+        } else if(isStudent) { // 학생 할인
+            System.out.println("입장료 " + (fee / 2) + "원");
+        } else { // 일반 성인
+            System.out.println("입장료 " + fee + "원");
         }
+
 
 
     }
