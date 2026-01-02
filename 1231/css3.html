@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    p{
+        color:red;
+    }
+    .bb{
+        color:blue;
+    }
+    .vio{
+        background-color: violet;
+    }
+    #vio{
+        background-color: brown;
+    }
+    .nam{
+        background-color: darkblue;
+    }
+    h2{background-color: yellow !important;}
+    /* id는 중복이 안되며 id가 클래스보다 우선순위가 높고 그 다음이 클래스 그 다음이 태그다 */
+</style>
+</head>
+<body>
+    <h1 class="vio">나는 보라색</h1>
+    <h1 id="vio" class="vio">나는 초록색</h1>
+    <p>나는 빨간색</p>
+    <p class="bb">나는 파란색</p>
+
+    <h2>나는 노란색</h2>
+    <h2 class="nam">나는 남색</h2>
+</body>
+</html>
